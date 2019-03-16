@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    {{ content }}
+    <header>
+        <h1 class="header__title"><a href="/">BEATRIZ <br/> LEONARDO</a></h1>
+    </header>
+    <div>
+        <section class="navbar">
+            {% include navbar.html %}
+        </section>
+
+        <section class="posts">
+            {{ content }}
+        </section>
+    </div>
 </body>
 </html>

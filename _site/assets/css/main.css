@@ -1,2 +1,36 @@
+@font-face {
+  font-family: Grandeza;
+  src: url("./../fonts/SF Grandezza Heavy.ttf"); }
 body {
-  color: #444444; }
+  font-family: Grandeza, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 4rem; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:link, a:visited {
+    color: #000; }
+  a:hover, a:active {
+    color: #e80e02; }
+
+nav ul,
+footer ul {
+  list-style: none;
+  padding: 0; }
+
+.header__title {
+  margin: 0; }
+
+.navbar {
+  width: 200px;
+  display: inline-block;
+  position: absolute;
+  bottom: 2rem; }
+
+.posts {
+  margin-left: 200px; }
