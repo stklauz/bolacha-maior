@@ -1,0 +1,9 @@
+- name: Instagram
+  icon: /assets/img/social-media/instagram-logo.png
+  url: https://www.instagram.com/a.curious.creature/
+- name: Facebook
+  icon: /assets/img/social-media/facebook-logo.png
+  url: https://business.facebook.com/blscribbles/
+- name: Email
+  icon: /assets/img/social-media/email.png
+  url: "mailto:beatrizscleonardo@gmail.com"

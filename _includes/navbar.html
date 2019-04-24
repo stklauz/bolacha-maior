@@ -41,22 +41,14 @@
         </li>
     </ul>
 </nav>
-<footer>
+<footer class="social-media">
     <ul>
-        <li>
-            <a href="">
-                <img class="social-media__icon" src="/assets/img/social-media/facebook-logo.png" alt="Facebook icon">
+        {% for item in site.data.social-media %}
+        <li class="social-media__item">
+            <a href="{{ item.url }}">
+                <img class="social-media__icon" src="{{ item.icon }}" alt="{{ item.name }} icon">
             </a>
         </li>
-        <li>
-            <a href="">
-                <img class="social-media__icon" src="/assets/img/social-media/instagram-logo.png" alt="Instagram icon">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img class="social-media__icon" src="/assets/img/social-media/email.png" alt="Email Icon">
-            </a>
-        </li>
+        {% endfor %}
     </ul>
 </footer>   

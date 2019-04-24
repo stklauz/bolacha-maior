@@ -1,13 +1,13 @@
 nav,
 footer {
-
     ul {
         list-style: none;
         padding: 0;
     }
-    
+}
+
+nav {
     li {
-        
         a {
             display: block;
 
@@ -46,4 +46,17 @@ footer {
     display: inline-block;
     position: absolute;
     bottom: 2rem;
+}
+
+.social-media {
+    margin-top: $size-l;
+}
+
+.social-media__item {
+    display: inline-block;
+}
+
+.social-media__icon {
+    height: $size-m;
+    width: $size-m;
 }
