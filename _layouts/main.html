@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1 class="header__title"><a href="/">BEATRIZ <br/> LEONARDO</a></h1>
-    </header>
-    <div>
-        <section class="navbar">
-            {% include navbar.html %}
-        </section>
 
-        <section class="posts">
-            {{ content }}
-        </section>
-    </div>
+        {%if page.category%}
+            <h2 class="header__subtitle">{{page.category}}</h2>
+        {% endif %}
+    </header>
+    <main>
+        {{ content }}
+    </main>
 </body>
 </html>

@@ -1,0 +1,49 @@
+nav,
+footer {
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    li {
+        
+        a {
+            display: block;
+
+            &:link,
+            &:visited  {
+                color: $color-black;
+            }
+        
+            &:hover,
+            &:active{
+                background: $color-red;
+                box-shadow: -$size-s 0 0 $color-red;
+                color: $color-black;
+            }
+        }
+    }
+}
+
+.header {
+    @include above-phone {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header__title {
+    margin:0;
+}
+
+.header__subtitle {
+    margin:0;
+}
+
+.navbar {
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    bottom: 2rem;
+}

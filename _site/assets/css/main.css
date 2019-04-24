@@ -22,8 +22,29 @@ nav ul,
 footer ul {
   list-style: none;
   padding: 0; }
+nav li a,
+footer li a {
+  display: block; }
+  nav li a:link, nav li a:visited,
+  footer li a:link,
+  footer li a:visited {
+    color: #000; }
+  nav li a:hover, nav li a:active,
+  footer li a:hover,
+  footer li a:active {
+    background: #e80e02;
+    box-shadow: -1rem 0 0 #e80e02;
+    color: #000; }
+
+@media (min-width: 599px) {
+  .header {
+    display: flex;
+    justify-content: space-between; } }
 
 .header__title {
+  margin: 0; }
+
+.header__subtitle {
   margin: 0; }
 
 .navbar {
@@ -32,5 +53,5 @@ footer ul {
   position: absolute;
   bottom: 2rem; }
 
-.posts {
+.post-list {
   margin-left: 200px; }

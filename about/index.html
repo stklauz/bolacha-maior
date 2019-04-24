@@ -1,0 +1,27 @@
+---
+layout: main
+category: about
+---
+
+<section>
+    <figure>
+        <img/>
+        <figcaption></figcaption>
+    </figure>
+    <article>
+        <p>
+            Beatriz Leonardo is a multi-media Portuguese artist currently residing in Bristol. Her practice ranges from illustration and printmaking, to motion and graphic design work. She is interested in the symbiosis between analogue and digital, figurative and conceptual, and the fine line that separates reality from imagination.
+        </p>
+        <p>
+            Inspired by the oniric realm and dystopian futuristic futures, she tries to recreate memories of masked creatures using simple black lines, in a world where all that is ephemeral is forever. Her illustrations flow through themes of surrealism, mythology and identity. She has been exploring the possibilities of narrative using different mediums, and has created graphic novels, comics, zines, and animations in an attempt to tap into story-telling in all its forms.
+        </p>
+    </article>
+    <article>
+        <h3>Expositions</h3>
+        <ul>
+           {%for expo in site.data.expositions%}
+            <li>{{ expo }}</li>
+           {% endfor %}
+        </ul>
+    </article>
+</section>

@@ -1,0 +1,30 @@
+@font-face { 
+    font-family: Grandeza; 
+    src: url('./../fonts/SF Grandezza Heavy.ttf');
+}
+
+body {
+    font-family: Grandeza, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: $size-l;
+}
+
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+    &:link,
+    &:visited  {
+        color: $color-black;
+    }
+
+    &:hover,
+    &:active{
+        color: $color-red;
+    }
+}

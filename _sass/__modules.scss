@@ -1,0 +1,19 @@
+@mixin above-phone {
+    @media (min-width: 599px) { @content; }
+}
+
+@mixin above-tablet {
+    @media (min-width: 756px) { @content; }
+}
+
+@mixin above-desktop {
+    @media (min-width: 1200px) { @content; }
+}
+
+// sizes
+$size-s: 1rem;
+$size-m: 2rem;
+$size-l: 4rem;
+// color
+$color-black: #000;
+$color-red: #e80e02;
