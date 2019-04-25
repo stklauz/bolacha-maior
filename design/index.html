@@ -1,0 +1,17 @@
+---
+layout: main
+categories: design
+---
+
+<section class="post-list">
+    <ul class="post-list__container" data-masonry='{ "itemSelector": ".post", "columnWidth": 200 }'>
+        {% assign art_list = site.art | where: "categories", "design" | sort: 'year' | reverse %}
+        {% for art in art_list %}
+        <li class="post">
+            <h2><a href="{{ art.url }}">{{ art.title }}</a></h2>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<script src="/assets/scripts/masonry.pkgd.min.js"></script>
