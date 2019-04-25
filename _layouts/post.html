@@ -2,4 +2,19 @@
 layout: main
 ---
 
-{{post.title}}
+<section>
+    <figure>
+        <img />
+    </figure>
+    <article>
+        <h3>"{{ page.title }}"</h3>
+
+        <div>
+            {% for item in page.details %}
+            <p>{{ item }}</p>
+            {% endfor %}
+        </div>
+
+
+    </article>
+</section>

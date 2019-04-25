@@ -8,10 +8,11 @@ title: Beatriz Leonardo
 </section>
 
 <section class="post-list">
-  <ul>
-    {% for post in site.posts %}
+  <ul class="post-list__container">
+    {% assign art_list = site.art | sort: 'year' | reverse %}
+    {% for art in art_list %}
       <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ art.url }}">{{ art.title }}</a></h2>
       </li>
     {% endfor %}
   </ul>
