@@ -1,8 +1,8 @@
 ---
 layout: art_image
 
-title: Muses
-year: 2017
+title: Mind Melt
+year: 2018
 img_url: 
 shop_url:
 
@@ -13,6 +13,6 @@ permalink: /:categories/:title
 
 15cm x 21cm
 
-Lino Relief on high quality 300gsm paper
+Lino Relief on high quality japanese paper.
 
-£30
+£20

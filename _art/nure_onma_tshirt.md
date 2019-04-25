@@ -1,8 +1,8 @@
 ---
 layout: art_image
 
-title: Muses
-year: 2017
+title: Nure Onma T-shirt
+year: 2018
 img_url: 
 shop_url:
 
@@ -11,8 +11,8 @@ categories: printmaking
 permalink: /:categories/:title
 ---
 
-15cm x 21cm
+Sizes (S-M-L)
 
-Lino Relief on high quality 300gsm paper
+Black T-shirt screenprinted by the artist.
 
-£30
+£20

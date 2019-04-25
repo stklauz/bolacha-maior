@@ -1,8 +1,8 @@
 ---
 layout: art_image
 
-title: Muses
-year: 2017
+title: Nure Onma T-shirt
+year: 2018
 img_url: 
 shop_url:
 
@@ -11,8 +11,6 @@ categories: printmaking
 permalink: /:categories/:title
 ---
 
-15cm x 21cm
+Recycled tote bag screenprinted by the artist.
 
-Lino Relief on high quality 300gsm paper
-
-£30
+£15
