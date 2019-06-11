@@ -3,7 +3,7 @@ layout: main
 title: Beatriz Leonardo
 ---
 
-<section class="navbar">
+<section id="menuContainer" class="navbar">
   {% include navbar.html %}
 </section>
 
@@ -19,3 +19,15 @@ title: Beatriz Leonardo
 </section>
 
 <script src="/assets/scripts/masonry.pkgd.min.js"></script>
+<script>
+    var menuToggle = document.getElementById("menuToggle");
+    var menu = document.getElementById("menu");
+    var menuContainer = document.getElementById("menuContainer");
+
+    menuToggle.onclick = function () {
+      menuToggle.classList.toggle("active");
+      menu.classList.toggle("active");
+      menuContainer.classList.toggle("active");
+
+    }
+</script>

@@ -3,7 +3,7 @@ layout: main
 categories: printmaking
 ---
 
-<section class="post-list">
+<section class="post-list post-list--category">
     <ul class="post-list__container" data-masonry='{ "itemSelector": ".post", "columnWidth": 200 }'>
         {% assign art_list = site.art | where: "categories", "printmaking" | sort: 'year' | reverse %}
         {% for art in art_list %}

@@ -2,7 +2,25 @@
 
 @import '__base';
 @import '_navigation';
+@import '_menu';
+
+main {
+    margin-top: 8rem;
+
+    @include above-tablet {
+        margin-top: 6rem;
+    }
+}
 
 .post-list {
-    margin-left: 200px;
+
+    @include above-tablet {
+        margin-left: 200px;
+    }
+
+    &--category {
+        @include above-tablet {
+            margin-left: 0;
+        } 
+    }
 }

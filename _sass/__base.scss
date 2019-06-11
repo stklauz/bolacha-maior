@@ -6,7 +6,11 @@
 body {
     font-family: Grandeza, Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: $size-l;
+    padding: 2rem;
+
+    @include above-tablet {
+        padding: 4rem;
+    }
 }
 
 *, 

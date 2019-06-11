@@ -13,39 +13,98 @@ nav {
 
             &:link,
             &:visited  {
-                color: $color-black;
+                color: #fff;
+
+                @include above-tablet {
+                    color: $color-black;
+                }
             }
         
             &:hover,
             &:active{
-                background: $color-red;
+                background: $color-black;
                 box-shadow: -$size-s 0 0 $color-red;
-                color: $color-black;
+                color: #fff;
+
+                @include above-tablet {
+                    background: $color-red;
+                    color: $color-black;
+
+                }
             }
         }
     }
 }
 
 .header {
-    @include above-phone {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    @include above-tablet {
         display: flex;
         justify-content: space-between;
     }
 }
 
 .header__title {
-    margin:0;
+    margin: 2rem 0 0 2rem;
+
+    @include above-tablet {
+        margin: 4rem 0 0 4rem;
+    }
 }
 
 .header__subtitle {
-    margin:0;
+    margin: 0 2rem 0;
+
+    @include above-tablet {
+        margin: 4rem 4rem 0 0;
+    }
 }
 
 .navbar {
     width: 200px;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     bottom: 2rem;
+
+    &.active {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: red;
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @include above-tablet {
+            width: auto;
+            height: auto;
+            background: unset;
+            z-index: 0;
+            text-align: left;
+            display: block;
+            top: inherit;
+            right:inherit;
+        }
+    }
+
+    &__menu {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+
+        @include above-tablet {
+            display: block;
+        }
+    }
 }
 
 .social-media {

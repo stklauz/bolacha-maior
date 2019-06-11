@@ -1,0 +1,65 @@
+.middle{
+    width: 70px;
+    height: 40px;
+    position: fixed;
+    top: 4rem;
+    right: 0rem;
+    margin: -20px 0 0 -35px;
+
+    @include above-tablet {
+        display: none;
+    }
+  }
+  
+  a.menu{
+    float: left;
+    width: 30px;
+    height: 23px;
+    overflow: hidden;
+    transition: 0.3s;
+    span{
+      float: left;
+      width: 30px;
+      height: 3px;
+      background-color: #444;
+      position: relative;
+      top: 10px;
+      transition: 0.3s;
+      &:before{
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: #444;
+        position: absolute;
+        top: -8px;
+        left: 0;
+      }
+      &:after{
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: #444;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+      }     
+    }
+    &.active{
+      transform: rotate(360deg);
+      span{
+        background-color: transparent;
+        &:before{
+          top: 0;          
+          transform: rotate(-45deg);
+          background-color: #fff;
+
+        }
+        &:after{
+          bottom: 0;
+          transform: rotate(45deg);
+          background-color: #fff;
+
+        }
+      }
+    }
+  }

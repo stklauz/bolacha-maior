@@ -15,73 +15,79 @@
         
     </header>
     <main>
-        <section class="navbar">
-  <nav>
-    <ul>
-        <li>
-            <a href="/about">
-                about
-            </a>
-        </li>
-        <li>
-            <a href="/contact">
-                contact
-            </a>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <a href="/illustration/">
-                illustration
-            </a>
-        </li>
-        <li>
-            <a href="/printmaking/">
-                printmaking
-            </a>
-        </li>
-        <li>
-            <a href="/design/">
-                design
-            </a>
-        </li>
-        <li>
-            <a href="/motion/">
-                motion
-            </a>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <a href="https://www.beatrizleonardo.com/">
-                shop
-            </a>
-        </li>
-    </ul>
-</nav>
-<footer class="social-media">
-    <ul>
-        
-        <li class="social-media__item">
-            <a href="https://www.instagram.com/a.curious.creature/">
-                <img class="social-media__icon" src="/assets/img/social-media/instagram-logo.png" alt="Instagram icon">
-            </a>
-        </li>
-        
-        <li class="social-media__item">
-            <a href="https://business.facebook.com/blscribbles/">
-                <img class="social-media__icon" src="/assets/img/social-media/facebook-logo.png" alt="Facebook icon">
-            </a>
-        </li>
-        
-        <li class="social-media__item">
-            <a href="mailto:beatrizscleonardo@gmail.com">
-                <img class="social-media__icon" src="/assets/img/social-media/email.png" alt="Email icon">
-            </a>
-        </li>
-        
-    </ul>
-</footer>   
+        <section id="menuContainer" class="navbar">
+  <div class="middle">
+    <a href="#" id="menuToggle" class="menu two"><span></span></a>
+  </div>    
+<div id="menu" class="navbar__menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="/about">
+                    about
+                </a>
+            </li>
+            <li>
+                <a href="/contact">
+                    contact
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/illustration/">
+                    illustration
+                </a>
+            </li>
+            <li>
+                <a href="/printmaking/">
+                    printmaking
+                </a>
+            </li>
+            <li>
+                <a href="/design/">
+                    design
+                </a>
+            </li>
+            <li>
+                <a href="/motion/">
+                    motion
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.beatrizleonardo.com/">
+                    shop
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <footer class="social-media">
+        <ul>
+            
+            <li class="social-media__item">
+                <a href="https://www.instagram.com/a.curious.creature/">
+                    <img class="social-media__icon" src="/assets/img/social-media/instagram-logo.png" alt="Instagram icon">
+                </a>
+            </li>
+            
+            <li class="social-media__item">
+                <a href="https://business.facebook.com/blscribbles/">
+                    <img class="social-media__icon" src="/assets/img/social-media/facebook-logo.png" alt="Facebook icon">
+                </a>
+            </li>
+            
+            <li class="social-media__item">
+                <a href="mailto:beatrizscleonardo@gmail.com">
+                    <img class="social-media__icon" src="/assets/img/social-media/email.png" alt="Email icon">
+                </a>
+            </li>
+            
+        </ul>
+    </footer>   
+</div>
+
 </section>
 
 <section class="post-list">
@@ -212,6 +218,18 @@
 </section>
 
 <script src="/assets/scripts/masonry.pkgd.min.js"></script>
+<script>
+    var menuToggle = document.getElementById("menuToggle");
+    var menu = document.getElementById("menu");
+    var menuContainer = document.getElementById("menuContainer");
+
+    menuToggle.onclick = function () {
+      menuToggle.classList.toggle("active");
+      menu.classList.toggle("active");
+      menuContainer.classList.toggle("active");
+
+    }
+</script>
 
     </main>
 </body>
